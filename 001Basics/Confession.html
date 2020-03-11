@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>四月是你的谎言</title>
+	<style type="text/css">
+		html{height: 100%;}
+		body{
+			background-image:url('./images/April.jpg');
+			background-size:100% 100%;
+			background-repeat:no-repeat;
+		}
+		@keyframes myfirst {
+			0%{opacity:0}
+			25%{opacity:100}
+			25.5%{opacity:0}
+			100%{opacity: 0}
+		}
+		@keyframes mysecond {
+			0%{opacity:0}
+			25%{opacity:0}
+			50%{opacity:100}
+			50.5%{opacity:0}
+			100%{opacity: 0}
+		}
+		@keyframes mythird {
+			0%{opacity:0}
+			25%{opacity:0}
+			50%{opacity:0}
+			75%{opacity:100}
+			75.5%{opacity:0}
+			100%{opacity: 0}
+		}
+		@keyframes myfourth{
+			0%{opacity:0}
+			25%{opacity:0}
+			50%{opacity:0}
+			75%{opacity:0}
+			100%{opacity:100}
+		}
+		p{
+			font-size: 88px;
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			color: pink;
+		}
+		#yi{
+			animation:myfirst 32s infinite;
+		}
+		#er{
+			animation:mysecond 32s infinite;
+		}
+		#san{
+			animation:mythird 32s infinite;
+		}
+		#si{
+			animation:myfourth 32s infinite;
+		}
+	</style>
+</head>
+<body>
+<audio src="wav/April.mp3"  autoplay="autoplay"></audio>
+<p id="yi">入梦落樱满熏香</p>
+<p id="er">梦醒犹记四月谎</p>
+<p id="san">此生无悔入四月</p>
+<p id="si">来世愿做友人A</p>
+</body>
+</html>
