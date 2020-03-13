@@ -1,0 +1,69 @@
+html,body,div{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+div{
+    font-size: 180px;
+    position: absolute;
+    padding-top: 20%;
+    text-align: center;
+}
+#z{
+    font-size: 36px;
+    display: block;
+    animation: z 10s infinite;
+}
+#c{
+    background-color: lightgreen;
+    animation:c 10s infinite;
+}
+#x{
+    background-color: red;
+    animation:x 10s infinite;
+}
+#q{
+    background-image:url('../images/April.jpg');
+    background-size:100% 100%;
+    background-color: white;
+    animation:q 10s infinite;
+}
+#d{
+    background-color: black;
+    animation:d 10s infinite;
+    color: white;
+}
+@keyframes c {
+    0%{opacity:0}
+    20%{opacity:100}
+    40%{opacity:0}
+    100%{opacity: 0}
+}
+@keyframes x {
+    0%{opacity:0}
+    20%{opacity:0}
+    40%{opacity:100}
+    60%{opacity:0}
+    100%{opacity: 0}
+
+}
+@keyframes q {
+    0%{opacity:0}
+    40%{opacity:0}
+    60%{opacity:100}
+    80%{opacity:0}
+    100%{opacity: 0}
+}
+@keyframes d {
+    0%{opacity:0}
+    60%{opacity:0}
+    80%{opacity:100}
+    100%{opacity: 0}
+}
+@keyframes z {
+    0%{opacity:0}
+    70%{opacity:0}
+    80%{opacity:100}
+    90%{opacity:0}
+    100%{opacity: 0}
+}

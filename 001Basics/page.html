@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>春夏秋冬2</title>
+    <link rel="stylesheet" type="text/css" href="css/page.css"/>
+    <script>
+        function oudioAutoPlay(id){
+            var audio=document.getElementById(id);
+            audio.play();
+            document.addEventListener("WeixinJSBridgeReady",function){
+                audio.play();
+            },false);
+            document.addEventListener('VixinJSBridgeReady',function){
+                audio.play();
+            },false);
+        }
+    </script>>
+</head>
+<body onload="oudioAutoPlay('bgm');">
+<audio id="bgm" src="wav/April.mp3" preload="auto" autoplay="autoplay"></audio>
+<div id="c">春</div>
+<div id="x">夏</div>
+<div id="q">秋</div>
+<div id="d">
+    冬
+    <span id="z">贞下起元</span>
+</div>
+</body>
+</html>

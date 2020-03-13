@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function isInteger(count) {
+            return count % 1 === 0;
+        }
+        var price = 10,//单价count;//数量
+                count = prompt(price + "元一杯，您要多少杯？第二杯半价哦！");
+        if (isNaN(count)) {
+            document.write("请输入数字");
+        }
+        else {
+            if (isInteger(count)) {
+                if (count % 2 == 0) {
+                    totaPrice = count * price * 0.75;
+                }
+                else {
+                    totaPrice = count * price * 0.75 + price / 4;
+                }
+            }
+            else {
+                document.write("必须整数杯");
+            }
+        }
+        document.write("您总共消费了" + totaPrice + "元");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
